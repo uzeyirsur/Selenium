@@ -7,7 +7,7 @@ import org.testng.Assert;
 
 import java.time.Duration;
 
-public class Test01 {
+public class E2E {
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver","C:\\Users\\omers\\Documents\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -16,6 +16,7 @@ public class Test01 {
         driver.findElement(By.id("user-name")).sendKeys("standard_user");
         driver.findElement(By.id("password")).sendKeys("secret_sauce");
         driver.findElement(By.id("login-button")).click();
+
         driver.findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
         driver.findElement(By.cssSelector("a[class=shopping_cart_link]")).click();
         driver.findElement(By.id("checkout")).click();
