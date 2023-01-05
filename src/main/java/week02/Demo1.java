@@ -1,3 +1,5 @@
+package week02;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -18,9 +20,8 @@ public class Demo1 {
         System.out.println("Test1:" + (str));
         String pageSource = driver.getPageSource();
         Thread.sleep(3000);
-driver.findElement(By.xpath("//input[@class='vector-search-box-input']")).sendKeys("William Shakespeare");
-Thread.sleep(2000);
-
+        driver.findElement(By.xpath("//input[@class='vector-search-box-input']")).sendKeys("William Shakespeare");
+        Thread.sleep(2000);
 
 
         Thread.sleep(2000);
