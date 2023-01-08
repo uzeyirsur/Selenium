@@ -1,2 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/omers/workspace/InarAcademy/Selenium/src/main/java/week04/Chapter16/Day01.java"><classes><class name="week04.Chapter16.Day01"><methods><include name="Demo"/></methods></class></classes></test></suite>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Loan Department" parallel="tests" thread-count="6">
+    <listeners>
+        <listener class-name="week04.Chapter16.Listeners"/>
+    </listeners>
+    <parameter name="URL" value="hey.com"/>
+    <test name="Personal Loan">
+
+        <classes>
+            <class name="week04.Chapter16.Day01">
+                <methods>
+
+                </methods>
+            </class>
+            <class name="week04.Chapter16.Day02"/>
+            <class name="week04.Chapter16.Day04"/>
+        </classes>
+    </test>
+    <test name="Car Loan">
+        <classes>
+            <class name="week04.Chapter16.Day03">
+                <methods>
+                    <exclude name="MobileLoginCarLoan"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

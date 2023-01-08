@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Loan Department]">
+  <parameter name="URL" value="hey.com"/>
+  <listeners>
+    <listener class-name="week04.Chapter16.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Personal Loan(failed)">
+    <classes>
+      <class name="week04.Chapter16.Day04">
+        <methods>
+          <include name="APILoginHouseLoan" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- week04.Chapter16.Day04 -->
+      <class name="week04.Chapter16.Day01">
+        <methods>
+          <include name="BeforeTest"/>
+          <include name="AfterTest"/>
+          <include name="Demo"/>
+        </methods>
+      </class> <!-- week04.Chapter16.Day01 -->
+    </classes>
+  </test> <!-- Personal Loan(failed) -->
+</suite> <!-- Failed suite [Loan Department] -->

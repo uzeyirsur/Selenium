@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+    <test name="Regression">
+        <groups>
+            <run>
+                <include name="Smoke"/>
+            </run>
+        </groups>
+<classes>
+    <class name="week04.Chapter16.Day01"/>
+    <class name="week04.Chapter16.Day02"/>
+    <class name="week04.Chapter16.Day03"/>
+</classes>
+    </test>
+
+</suite>
